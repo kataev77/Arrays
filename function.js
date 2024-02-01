@@ -4,10 +4,11 @@ function func (sum) {
      for(let i = 0; i < arr.length; i++) {
         sum = sum + arr[i]
      }
-
-     console.log(sum)
+     return sum
 }
-func(1);
+console.log(func(0))
+
+
 
 
 let arr_1 = [-1, 2, -2, 2, 3, -3, 4, 5, 6, 7, 8, 9];
@@ -18,9 +19,9 @@ function func_1(summa) {
             summa += arr_1[i]
         }
     }
-    console.log(summa)
+    return summa
 }
-func_1(2);
+console.log(func_1(0))
 
 
 
@@ -32,9 +33,9 @@ function func_2(string) {
             string.push(arr_3[i])
         }
     }
-    console.log(string)
+    return string
 }
-func_2([]);
+console.log(func_2([ ]));
 
 
 const arr_4 = ['a', 'b', 'c', 'y', 'a']
@@ -45,9 +46,9 @@ function func_3(result){
             result.push(arr_4[i])
         }
     }
-    console.log(result)
+    return result
 }
-func_3([]);         
+console.log(func_3([ ]))  
 
 
 
@@ -65,7 +66,7 @@ const messages = [
 function deleteMessages(array) {
     let arr_5 = [ ];
     for(let i = 0; i < array.length; i++) {
-        if(array[i].deleted === true ) {
+        if(array[i].deleted === false ) {
             arr_5.push(array[i])
         }
     }
